@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5/ Imagens/ Audios e Vídeos</title>
+</head>
+<body>
+    <h1>Inserindo videos do Youtube </h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2EhBzT4i3Jg?si=dbEX_SfcI0_IruQu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Vídeos em HTML5</h1>
+    <p>Este vídeo esta hospedado no meu próprio servidor</p>
+    <video width="300" poster="imagens/montanha.vertical.avif" autoplay controls loop>
+        <source src="videos/video editado.mp4" type="video/mp4">
+        <source src="videos/video editado.m4v" type="video/m4v">
+        <source src="videos/video editado.webm" type="video/webm">
+        <source src="videos/video editado.ogv" type="video/ogv">
+    </video>
+
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagens flexível">
+    </picture>
+    <h1>Reproduzinho aúdio</h1>
+    <p>Vamos aprender a reproduzir aúdio em HTML5</p>
+        <audio src="July - John Patitucci.mp3" autoplay controls ></audio> <!--Para tocar assim que abrir o site-->
+    <p>Vamos aprender outra maneira agora:</p>
+    <audio preload="metadata" controls>
+        <source src="July - John Patitucci.mp3" type="audio/mpeg">
+        <source src="July - John Patitucci.ogg" type="audio/ogg">
+        <source src="July - John Patitucci.wav" type="audio/wav">
+    </audio>
+    <p>Infelizmente seu navegador nao é compativel com este som</p>
+    <a href="July - John Patitucci.mp3" target="_blank" > Para fazer download do arquivo clique aqui</a>
+    <a href="https://www.google.com/search?q=imagens+de+natal&oq=imagens&gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyDwgAEEUYORixAxjJAxiABDIHCAEQABiABDIQCAIQABiDARixAxiABBiKBTINCAMQABiDARixAxiABDIQCAQQLhiDARixAxiABBiKBTIGCAUQRRg9MgYIBhBFGDwyBggHEEUYPNIBCDIyMjJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#vhid=uu5Pf-WW_H3teM&vssid=l" target="_top">Veja a imagem a seguir</a>
+</body>
+</html>
